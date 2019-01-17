@@ -1,3 +1,5 @@
+#Semantic Search Engine
+
 Add your Corpus location in Constants.py (self.location = './ProjectCorpus/Corpus/' )
 If you are running solr on different port(other than 8983), update that port in Constants.py (self.solrUrl = 'http://localhost:8983/solr/')
 If you project name is different that "gettingstarted", update project in Constants.py (self.project = 'gettingstarted')
@@ -22,7 +24,13 @@ Following Command will Read corpus, tokenize it , get lemmas, stemma, hypernyms 
 Task3.searchSolr() , is function that will search for hardcoded values
 Task3.analyzeSingleSentence("Australia accused the U.S. of increasing") will perform Task3 only for one sentence sent as an argument.
 
+TO Execute Search Engine : 
+
 		python test.py Read_Corpus
 		python test.py Task2 "Company suffering from losses"
 		python test.py Task3 "Company suffering from losses"
-        python test.py Task4 "Company suffering from losses"
+        	python test.py Task4 "Company suffering from losses"
+		
+		Where "Company suffering from losses" is the query we need to search for.
+		
+		
