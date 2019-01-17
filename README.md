@@ -14,17 +14,17 @@ curl http://localhost:8983/solr/gettingstarted/update -H "Content-Type: text/xml
 curl http://localhost:8983/solr/gettingstarted/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
 
 
-To Run Project Prerequiste:
+####To Run Project Prerequiste:
 need to install pysolr and nltk
 #nltk.download('stopwords')
 Unzip "stanford-corenlp-full-2017-06-09" folder, and add its path in Task3.py at "path_to_models_jar" and "path_to_jar"
 
-Run Command :
+####Run Command :
 Following Command will Read corpus, tokenize it , get lemmas, stemma, hypernyms , etc and store it in solr. This is done by Task3.ReadCorpus()
 Task3.searchSolr() , is function that will search for hardcoded values
 Task3.analyzeSingleSentence("Australia accused the U.S. of increasing") will perform Task3 only for one sentence sent as an argument.
 
-TO Execute Search Engine : 
+####TO Execute Search Engine : 
 
 		python test.py Read_Corpus
 		python test.py Task2 "Company suffering from losses"
